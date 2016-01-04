@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Saving Wingu Tembo </title>
+		<link href="//fonts.googleapis.com/css?family=Roboto:400,300,200,100&subset=latin,cyrillic" rel="stylesheet">
+		
+		<!--
+		<link rel="stylesheet" href="app/styles/mystyle.css">	
+		-->
+		    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #headline {
+        padding: 0.8em;
+        color: white;
+        font-family: Roboto, helvetica, arial, sans-serif;
+        background-color: black;
+        background-image: url(app/images/Outer-Space-Wallpaper.jpg);
+        background-size: cover;
+      }
+
+      #headline h1 {
+        font-weight: 200;
+        font-size: 60px;
+        line-height: 1em;
+        margin-bottom: 0;
+      }
+        
+      #headline h2 {
+        font-weight: 200;
+        font-size: 30px;
+        margin-top: 5px;
+      }
+
+      #headline #blurb {
+        font-weight: 300;
+        font-size: 18px;
+      }
+
+      #headline #register {
+        background-color: #39b1a4;
+        background-color: rgba(57,177, 164, 0.7);
+        padding: 1em;
+      }
+
+      #headline #register h2 {
+        font-weight: 100;
+        padding: 0;
+        margin: 0;
+      }
+
+      #headline #register label {
+        font-size: 1.2em;
+        font-weight: 200;
+        padding-top: 12px;
+        display: block;
+      }
+
+      #headline #register input {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 200;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      #headline #register input[type=submit] {
+        background-color: hsl(8, 70%, 54%);
+        color: white;
+        margin-top: 20px;
+        padding: 10px;
+        border: none;
+        box-sizing: border-box;
+        font-size: 18px;
+      }
+
+      #section1, #section2, #section3 {
+        box-sizing: border-box;
+        padding: 20px;
+      }
+
+      #section1 h2, #section2 h2, #section3 h2  {
+        margin-top: 0;
+        font-size: 24px
+      }
+
+      #section1 {
+        background-color: white;
+        font-family: Roboto, sans-serif;
+        font-weight: 100;
+        font-size: 18px;
+      }
+
+      #section1 h2 {
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 20px;
+      }
+
+      #section1 h2 + p {
+      }
+
+      #section1 video {
+        width: 100%;
+      }
+
+      #section2 {
+        background-color: #e9e9e9;
+        font-family: Roboto, sans-serif;
+        font-weight: 100;
+        font-size: 18px;
+      }
+
+      #section2 h2 {
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 20px;
+      }
+
+      #section2 h2 + p {
+        text-align: center;
+      }
+
+      #section2 div {
+        text-align: center;
+      }
+
+      #section2 div img {
+        width: 100%
+      }
+
+      #section3 {
+        background-color: #f5f5f5;
+        font-family: Roboto, sans-serif;
+        font-weight: 100;
+        text-align: center;
+        margin: auto;
+      }
+
+      #section3 h2 {
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 20px;
+      }
+
+      #section3 h2 + p {
+        text-align: center;
+      }
+
+      #section3 figure {
+        text-align: center;
+      }
+
+      #section3 figure figcaption {
+        text-align: center;
+        font-weight: 400;
+      }
+
+      footer {
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        text-align: center;
+        background-color: hsl(8, 70%, 54%);
+        color: white;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+
+      table {
+        margin-top: 26px;
+        width: 100%;
+      }
+      thead {
+        font-weight: bold;
+      }
+
+      tbody {
+        text-align: center;
+      }
+
+      
+@media screen and (max-width: 600px) {
+        table thead {
+          display: none;
+        }
+
+        table td {
+          display: block;
+          position: relative;
+          padding-left: 50%;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          text-align: left;
+          background: #e9e9e9;
+        }
+
+        table td:before {
+          content: attr(data-th) " :";
+          display: inline-block;
+          color: #000000;
+          background: #e9e9e9;
+          border-right: 2px solid transparent;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 33%;
+          max-height: 100%;
+
+          font-size: 16px;
+          font-weight: 300;
+          padding-left: 13px;
+          padding-top: 13px;
+        }
+      }
+      
+@media screen and (min-width: 600px) {
+          #headline {
+            padding: 20px 5%;
+          }
+          
+          .container {
+            margin: auto;
+            max-width: 800px;
+          }
+
+          #headline #blurb {
+            float: left; 
+            font-weight: 200;
+            width: 50%;
+            font-size: 18px;
+            box-sizing: border-box;
+            padding-right: 10px;
+          }
+
+          #headline br {
+            clear: both;
+          }
+
+          #headline #register {
+            float:right;
+            padding: 20px;
+            width: 50%;
+            box-sizing: border-box;
+            font-weight: 300;
+          }
+          
+          #section1 #section2, #section3 {
+            box-sizing: border-box;
+            padding: 10px 20% 80px 20%;
+          }
+          
+          #section1 h2, #section2 h2, #section3 h2  {
+            margin-top: 0;
+            font-size: 60px
+          }
+          
+          #section1 ul {
+            box-sizing: border-box;
+            float: left;
+            width: 50%;
+            padding-right: 1em;
+          }
+          
+          #section1 video {
+            box-sizing: border-box;
+            width: 50%;
+            float: right;
+          }
+
+          #section1 br {
+            clear: both;
+          }
+          
+          #section2 div img {
+            width: 30%;
+            margin: 1%;
+            box-sizing: border-box;
+            border-radius: 50% 50%;
+            box-shadow: black 0px 0px 5px;
+          }
+        }
+    </style>
+		
+	</head>
+	<body>
+		<div id="headline">
+			<div class="container">
+				<header>
+					<h1>Save the last flying elephant</h1>
+					<p>His fate in your hand</p>
+				</header>
+				<div id="blurb">
+					<p>So you have heard of a lonely flying elephant who has lived all by himself on a lonely and far away planet. He is the last one left on this planet because he was napping in a tree cave when a whirlwind snatches all his family away.</p>
+					<p>Should you be willing to accept this mission, you can help Wingu Tembo in the following ways:</p>
+					<ul>
+						<li>Send him message</li>
+						<li>Send him care package</li>
+						<li>Build a rocketship to travel to his planet to bring him back to Earth</li>
+					</ul>
+				</div>
+				<form method="post" id="register">
+					<h2>Sign up to help Wingu Tembo</h2>
+					<label for="name">Name</label> 
+					<input type="text" name="name" id="name"
+					placeholder="Jessica Chiang" required>
+					<label for="email">Email Address</label>
+					<input type="email" name="email" id="email"
+					placeholder="jessica@tembo.com" required>
+					<label for="tel">Telephone</label>
+					<input for="tel" name="tel" id="tel"
+					placeholder="(619)222-3334" required></label>
+					<input type="submit" value="Sign up">
+				</form>
+				<br>
+			</div>
+		</div>
+
+		<div id="section1">
+			<div class="container">
+        <h2>What will I learn?</h2>
+        <p>After completing this class, you'll have built a web application with a first-class mobile experience.</p>
+        <p>You'll understand what it takes to:</p>
+        <ul>
+          <li>build great web experiences on mobile devices</li>
+          <li>use the tools you need to test performance</li>
+          <li>apply your knowledge to your own projects in the future</li>
+        </ul>
+				<video controls poster="elephant.png">
+					<source src="legoland.MOV" type="video/mp4"></source>
+					          <p>Sorry your browser doesn't support video. 
+             <a href="legoland.MOV">Download the video</a>.
+          </p>
+				</video>
+				<br>
+			</div>
+		</div>
+		<div id="section2">
+			<div class="container">
+				<h2>Your Captains</h2>
+				<p>The universe's brave pioneers</p>
+				<div id="images">
+					<img src="app/images/BringYourKidToWorkDay.jpg" alt="Jessica Chiang: xxxyyy">
+					<img src="app/images/TakeYourKidToWork3.jpg" alt="Mike Angel: xxxxzzzz">	
+				</div>
+				<br>
+			</div>
+		</div>
+		<div id="section3">
+			<div class="container">
+				<h2>Why should I care about Wingu Tembo?</h2>
+				<p>It's the last magical creature which can dream a good dream and make it real the next morning</p> 
+				<table>
+					<caption>
+						<p>Data from xyz</p>
+					</caption>
+					<thread>
+					<tr>
+						<th>Planet</th>
+						<th>Dream Catcher</th>
+					</tr>
+					</thread>
+					<colgroup>
+						<col span="1">
+						<col span="1">
+					</colgroup>
+					<tbody>
+					<tr>
+						<td data-th="Planet">Mar</td>
+						<td data-th="Dream Catcher">Fish</td>
+					</tr>
+					<tr>
+						<td data-th="Planet">Pluto</td>
+						<td data-th="Dream Catcher">Tembo</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+			<p>Designed by TheTembo Crew</p>
+			</div>
+		</footer>
+		<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-24532603-1');ga('send','pageview');
+
+    var isCompleted = {};
+    function sampleCompleted(sampleName){
+      if (ga && !isCompleted.hasOwnProperty(sampleName)) {
+        ga('send', 'event', 'WebCentralSample', sampleName, 'completed'); 
+        isCompleted[sampleName] = true;
+      }
+    }
+</script>
+		 <script type="text/javascript">
+      function init() {
+        window.matchMedia("(max-width: 600px)").addListener(hitMQ);
+      }
+
+      function hitMQ(evt) {
+        sampleCompleted("GettingStarted-ContentWithStyles");
+      }
+
+      init();
+
+    </script>
+	</body>
+</html>
